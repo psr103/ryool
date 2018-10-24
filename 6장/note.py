@@ -1,16 +1,3 @@
-cCnt, lCnt, nCnt, hCnt, eCnt = 0,0,0,0,0
-
-
-for c in input("문자열을 입력하세요 :"):
-    if c.isupper():
-        cCnt += 1
-    elif c.islower():
-        lCnt += 1
-    elif c.isdigit():
-        nCnt += 1
-    elif c >= '가' and c <= '힣':
-        hCnt += 1
-    else :
-        eCnt += 1
-
-print("대문자: %d 소문자: %d 숫자: %d 한글: %d 기타:%d" % (cCnt, lCnt, nCnt, hCnt, eCnt))
+ss= '파이썬 공부는 즐겁습니다. 물론 모든 공부가 다 재미있지는 않죠.^^'
+ss.count(공부)
+print(ss.find('공부'), ss.rfind('공부'), ss.find('공부',5), ss.fine('없다'))
